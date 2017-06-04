@@ -1,0 +1,3 @@
+[submodule "dgg"]
+	path = dgg
+	url = git@github.com:blushies/website.git
