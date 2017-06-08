@@ -1,5 +1,11 @@
 {
+  "scripts": {
+    "build": "./scripts/build.sh"
+  },
   "devDependencies": {
-    "@types/chrome": "^0.0.46"
+    "@types/chrome": "^0.0.46",
+    "ts-loader": "^2.1.0",
+    "typescript": "^2.3.4",
+    "webpack": "^2.6.1"
   }
 }

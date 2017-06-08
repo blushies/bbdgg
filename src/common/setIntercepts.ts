@@ -2,25 +2,25 @@
 const redirects = [
   {
     from: '*://*.destiny.gg/*/chat.css',
-    to: './dgg/static/chat.css',
+    to: './dgg/chat.css',
   },
   {
     from: '*://*.destiny.gg/*/chat.js',
-    to: './dgg/static/chat.js',
+    to: './dgg/chat.js',
   },
   {
     from: '*://*.destiny.gg/*/common.js',
-    to: './dgg/static/common.js',
+    to: './dgg/common.js',
   },
 ];
 
 redirects.forEach(({ from, to }) => {
   chrome.webRequest.onBeforeRequest.addListener(details => {
-    console.log(details);
-    console.log(`redirecting from "${from}" to "${to}"`);
-    return {
+    const redirect = {
       redirectUrl: chrome.extension.getURL(to),
     };
+    console.log(`redirecting from "${from}" to "${to}"`, redirect);
+    return redirect;
   }, {
     types: ['script', 'stylesheet'],
     urls: [from],

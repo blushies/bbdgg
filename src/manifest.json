@@ -24,14 +24,13 @@
 
   "background": {
     "scripts": [
-      "./lib/index.js"
+      "./index.js"
     ],
     "persistent": true
   },
 
   "web_accessible_resources": [
-    "dgg/static/*",
-    "dgg/static/*",
-    "images/*"
+    "dgg/*",
+    "static/*"
   ]
 }
