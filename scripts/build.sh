@@ -6,7 +6,7 @@ rm -rf lib
 webpack --progress --display-chunks --display-reasons --display-error-details --display-modules
 
 cd dgg
-# npm run build:production
+npm run build:production
 cd ..
 
 dgg_output_dir="dgg/static"
