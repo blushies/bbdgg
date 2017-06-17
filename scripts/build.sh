@@ -6,7 +6,7 @@ rm -rf lib
 webpack --progress --display-chunks --display-reasons --display-error-details --display-modules
 
 cd dgg
-npm run build:production
+npm run build
 cd ..
 
 dgg_output_dir="dgg/static"
@@ -19,7 +19,7 @@ do
   cp -R "${dgg_output_dir}/fonts" "$browser_output_dir/dgg"
   cp -R "${dgg_output_dir}/img" "$browser_output_dir/dgg"
   cp -R static $browser_output_dir
-  files=( 'chat.css' 'chat.js' 'common.css' 'common.js' )
+  files=( 'chat.css' 'chat.js' )
   for file in "${files[@]}"
   do
     cp "${dgg_output_dir}/${file}" "$browser_output_dir/dgg"

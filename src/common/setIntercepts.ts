@@ -8,10 +8,6 @@ const redirects = [
     from: '*://*.destiny.gg/*/chat.js',
     to: './dgg/chat.js',
   },
-  {
-    from: '*://*.destiny.gg/*/common.js',
-    to: './dgg/common.js',
-  },
 ];
 
 redirects.forEach(({ from, to }) => {
