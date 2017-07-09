@@ -2,6 +2,10 @@
 
 An unofficial browser extension to add unofficial functionality to the destiny.gg chat.
 
+### Requirements
+
+1. Node >= 7.7.1
+1. everything [here](https://github.com/blushies/website#requirements)
 
 ### How it works
 
