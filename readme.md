@@ -5,11 +5,11 @@ An unofficial browser extension to add unofficial functionality to the destiny.g
 ### Requirements
 
 1. Node >= 7.7.1
-1. everything [here](https://github.com/blushies/website#requirements)
+1. everything [here](https://github.com/blushies/chat-gui#requirements)
 
 ### How it works
 
-The extension redirects requests for the javascript that controls the chat to a [forked version](https://github.com/blushies/website) that implements the aforementioned unofficial functionality.
+The extension redirects requests for the javascript that controls the chat to a [forked version](https://github.com/blushies/chat-gui) that implements the aforementioned unofficial functionality.
 
 ### How to build
 
