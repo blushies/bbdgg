@@ -14,8 +14,17 @@ The extension redirects requests for the javascript that controls the chat to a 
 ### How to build
 
 1. Clone this repository
+  1. `git clone https://github.com/blushies/bbdgg`
 1. Initialize the destiny.gg website submodule in `./dgg`
-1. `npm run build`
+  1. `git submodule init`
+  1. `git submodule update`
+  1. `cd dgg`
+  1. `npm i`
+  1. `cd ..`
+1. Build
+  1. `npm i`
+  1. `npm run build`
+1. Add to chrome by going to `chrome://extensions/` and checking the "Developer mode" checkbox, then loading the `./lib/chrome` folder as an unpacked extension.
 
 The build script should bundle all extension code, build the forked dgg chat code, and assemble the files into a folder to be loaded into your browser. Firefox and Chrome extensions should be built in `lib/firefox` and `lib/chrome` respectively. Load these unpacked addons into your browser.
 
