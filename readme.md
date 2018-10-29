@@ -31,6 +31,3 @@ The build script should bundle all extension code, build the forked dgg chat cod
 [Chrome instructions for loading an unpacked extension](https://developer.chrome.com/extensions/getstarted#unpacked)
 
 [Firefox instructions for loading an unpacked extension](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Temporary_Installation_in_Firefox)
-
-
-Note that Firefox is currently not working.
