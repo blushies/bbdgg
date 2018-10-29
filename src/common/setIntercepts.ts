@@ -1,12 +1,12 @@
 
 const redirects = [
   {
-    from: '*://*.destiny.gg/*/chat.css',
-    to: './dgg/chat.css',
-  },
-  {
     from: '*://*.destiny.gg/*/chat.js',
     to: './dgg/chat.js',
+  },
+  {
+    from: '*://*.destiny.gg/*/bbdgg.css',
+    to: './dgg/emoticons/bbdgg.css',
   },
 ];
 
