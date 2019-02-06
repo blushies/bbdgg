@@ -1,7 +1,7 @@
 
 const redirects = [
   {
-    from: '*://*.destiny.gg/*/chat.js',
+    from: 'https://cdn.destiny.gg/chat.*.js',
     to: './dgg/chat.js',
   },
   {
