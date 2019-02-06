@@ -5,16 +5,16 @@ An unofficial browser extension to add unofficial functionality to the destiny.g
 ### Requirements
 
 1. Node >= 7.7.1
-1. everything [here](https://github.com/blushies/chat-gui#requirements)
+1. everything [here](https://github.com/destinygg/website#requirements)
 
 ### How it works
 
-The extension redirects requests for the javascript that controls the chat to a [forked version](https://github.com/blushies/chat-gui) that implements the aforementioned unofficial functionality.
+The extension redirects requests for the javascript that controls the chat to a [forked version](https://github.com/downthecrop/chat-gui) that implements the aforementioned unofficial functionality.
 
 ### How to build
 
 1. Clone this repository
-  1. `git clone https://github.com/blushies/bbdgg`
+  1. `git clone https://github.com/downthecrop/bbdgg`
 1. Initialize the destiny.gg website submodule in `./dgg`
   1. `git submodule init`
   1. `git submodule update`
