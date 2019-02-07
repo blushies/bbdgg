@@ -15,6 +15,10 @@ redirects.forEach(({ from, to }) => {
     const redirect = {
       redirectUrl: chrome.extension.getURL(to),
     };
+    if(details.url.includes('vendor')){
+    	console.log("skipped match of vendor");
+	return { redirectUrl: details.url }
+    }
     console.log(`redirecting from "${from}" to "${to}"`, redirect);
     return redirect;
   }, {

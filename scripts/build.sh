@@ -21,7 +21,7 @@ do
   cp -R "${dgg_output_dir}/img/emoticons" "$browser_output_dir/dgg"
   cp -R "${dgg_output_dir}/img/emoticons-animated" "$browser_output_dir/dgg"
   cp -R static $browser_output_dir
-  files=( 'chat.css' 'chat.js' )
+  files=( 'chat.js' )
   for file in "${files[@]}"
   do
     cp "${dgg_output_dir}/${file}" "$browser_output_dir/dgg"
