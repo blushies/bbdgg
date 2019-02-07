@@ -1,7 +1,7 @@
 
 const redirects = [
   {
-    from: '*://*.destiny.gg/*/chat.js',
+    from: 'https://cdn.destiny.gg/chat.*.js',
     to: './dgg/chat.js',
   },
   {
@@ -15,6 +15,10 @@ redirects.forEach(({ from, to }) => {
     const redirect = {
       redirectUrl: chrome.extension.getURL(to),
     };
+    if(details.url.includes('vendor')){
+    	console.log("skipped match of vendor");
+	return { redirectUrl: details.url }
+    }
     console.log(`redirecting from "${from}" to "${to}"`, redirect);
     return redirect;
   }, {
